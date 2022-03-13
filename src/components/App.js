@@ -4,7 +4,6 @@ import form from "./form";
 function App() {
   return (
     <div>
-      fsdf
       <form />
     </div>
   );
