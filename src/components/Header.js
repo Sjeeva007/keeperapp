@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Header() {
+  const [first, setfirst] = useState();
+
+  function handleChange(event) {
+    const setfirst = event.target.value;
+  }
+
+  console.log(first);
   return (
     <div>
       <form>
         <label>Firstname</label>
-        <input type="text"></input>
+        <input type="text" value={first} onChange={handleChange}></input>
         <br></br>
-        <label>Lastname</label>
+        {/* <label>Lastname</label>
         <input type="text"></input>
         <br></br>
         <label>Address</label>
@@ -24,7 +31,7 @@ export default function Header() {
         <br></br>
         <label>Password</label>
         <input type="password" value=""></input>
-        <br></br>
+        <br></br> */}
         <button>submit</button>
       </form>
     </div>
