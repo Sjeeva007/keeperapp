@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
 export default function Header() {
-  const [first, setfirst] = useState();
+  const [first, setFirst] = useState();
 
   function handleChange(event) {
-    const setfirst = event.target.value;
+    setFirst(event.target.value);
   }
 
-  console.log(first);
   return (
     <div>
       <form>
