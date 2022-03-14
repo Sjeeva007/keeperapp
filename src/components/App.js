@@ -1,10 +1,10 @@
 import React from "react";
-import form from "./form";
+import Header from "./Header";
 
 function App() {
   return (
     <div>
-      <form />
+      <Header />
     </div>
   );
 }
